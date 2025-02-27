@@ -1,11 +1,10 @@
 .list-controls {
   position: sticky;
-  top: 0;
-  background: var(--secondary);
+  top: var(--header-offset);
+  background: #ffffff;
   z-index: 100;
-  padding-top: 1.5rem;
+  padding: 1.5rem 0 1rem 0;
   max-width: unset;
-  width: 100%;
 
   .navigation-container {
     .category-breadcrumb {
@@ -15,8 +14,8 @@
   .combo-box .combo-box-header,
   .select-kit.is-expanded .select-kit-body,
   .discourse-post-event .discourse-post-event-widget {
-    background-color: var(--secondary);
-    border-radius: 6.25rem;
+    background-color: #ffffff;
+    border-radius: var(--d-border-radius);
   }
 }
 .nav-pills > li > a:hover,

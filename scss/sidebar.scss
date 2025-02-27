@@ -1,8 +1,17 @@
 :root {
-  --d-sidebar-background: #f5f8ff;
+  // --d-sidebar-background: #f5f8ff;
+}
+
+.sidebar-section-link-wrapper .sidebar-section-link {
+  border-radius: var(--d-border-radius);
 }
 
 .sidebar-wrapper {
+  background: #f5f8ff;
+
+  .has-full-page-chat & {
+    background: transparent;
+  }
   .sidebar-container {
     border-right: none;
   }
@@ -10,4 +19,8 @@
   .sidebar-sections {
     padding: 0;
   }
+}
+
+.admin-area .sidebar-wrapper .admin-panel {
+  background-color: var(--secondary);
 }
